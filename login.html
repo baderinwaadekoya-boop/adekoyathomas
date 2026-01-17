@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Thomas-Hardy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">THOMAS-HARDY</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <section class="login-section">
+        <div class="login-container">
+            <div class="login-image">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600" alt="Dashboard">
+            </div>
+            <div class="login-form-container">
+                <h2>Welcome Back!</h2>
+                <p>Login to access your dashboard</p>
+                
+                <form class="login-form" onsubmit="return handleLogin(event)">
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> Password</label>
+                        <input type="password" placeholder="Enter your password" required>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn login-btn">Login <i class="fas fa-arrow-right"></i></button>
+                </form>
+                
+                <div class="signup-link">
+                    <p>Don't have an account? <a href="#contact">Contact Us</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Let's Work Together</h2>
+        <p>Available 24/7 for your projects | Fast Response | Quality Guaranteed</p>
+        
+        <div class="whatsapp-buttons">
+            <a href="https://wa.me/447474108553" class="wa-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> Chat UK: +44 747 410 8553
+            </a>
+            <a href="https://wa.me/2348035759848" class="wa-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> Chat NG: +234 803 575 9848
+            </a>
+        </div>
+        
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:thomas-hardy@gmail.com" style="color: #ffffff; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">thomas-hardy@gmail.com</a></p>
+        </div>
+        
+        <div class="social-links">
+            <p>Connect With Me:</p>
+            <a href="https://facebook.com/thomashardy" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://t.me/thomashardy" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://linkedin.com/in/thomashardy" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/thomashardy" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        
+        <p class="copyright">&copy; 2026 Thomas-Hardy | Professional Digital Services | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
